@@ -51,12 +51,15 @@
     padding-bottom: 30px;
     margin-bottom: 15px;
   }
-  
+  .main-info{
+    align-items: baseline;
+    gap: 3em;
+  }
   @media screen and (max-width: 576px) {
     .main-info,
     .contact_info_container {
       flex-direction: column;
-      padding-bottom: 2em;
+      padding: 2em;
     }
   
     .contact_info_container {
@@ -168,7 +171,7 @@
   .skills__header {
     color: var(--secondary-text-color);
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding-top: 2em;
   }
   
@@ -205,11 +208,10 @@
     text-decoration-color: var(--text-decoration-color);
     text-decoration-line: underline;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .experiences__company-project {
-    margin-left: 15px;
     margin-bottom: 25px;
   }
   
@@ -228,7 +230,6 @@
   
   .experiences__company-project-responsibilities {
     color: var(--secondary-text-color);
-    padding-left: 20px;
   }
   
   .additional-info {
