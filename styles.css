@@ -55,6 +55,11 @@
     align-items: baseline;
     gap: 3em;
   }
+  .main-info> div:nth-child(even){
+    border-right: 1px solid var(--text-decoration-color);
+    border-left: 1px solid var(--text-decoration-color);
+    padding: 1em;
+  }
   @media screen and (max-width: 576px) {
     .main-info,
     .contact_info_container {
@@ -177,7 +182,8 @@
   
   .skills__text {
     color: var(--secondary-text-color);
-    text-align: center;
+    text-align: -webkit-left;
+    line-height: 2.5em;
   }
   li {
     list-style-type: none;
@@ -185,10 +191,9 @@
   li:nth-child(odd){
     color: var(--list-odd-item-color);
   }
-  .experiences {
+  /* .experiences {
     flex: 1 1 60%;
-    margin-right: 50px;
-  }
+  } */
   
   .experiences__header {
     color: var(--secondary-text-color);
@@ -245,7 +250,9 @@
     text-align: left;
     margin-bottom: 20px;
   }
-  
+  .additional-info__education-university{
+    margin-bottom: 1em;
+  }
   .additional-info__education-university-durability {
     color: var(--durability-text-color);
     text-align: left;
